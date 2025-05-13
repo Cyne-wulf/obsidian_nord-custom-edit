@@ -38,6 +38,9 @@
     --green:    rgb(var(--green_x));
     --purple_x: 180,142,173; /* #b48ead */
     --purple:   rgb(var(--purple_x));
+
+    --customh1_x:  165, 197, 255;
+    --customh1: rgb(var(--customh1_x));
 }
 
 body
@@ -91,22 +94,34 @@ body
     --background-secondary-alt:      var(--dark2);
     --background-modifier-border:    var(--dark2);
 
-    --cursor-line-background:        rgba(var(--red_x), 0.2);
+    /*Frost0 and 1 greenish, looks good with red highlighting, frost3, subtle highlight but a little off color, not distracting
+     * frost2, correct color and is more intentional as a highlight(preferred)*/
+    --cursor-line-background:        rgba(var(--frost2_x), 0.2);
 
     --text-normal:                   var(--light2);
     --text-faint:                    var(--light0);
     --text-muted:                    var(--light1);
 
-    --link-url:                      var(--purple);
 
-    --h1-color:                      var(--red);
+/*Edited this section to add styling*/
+    --link-url:                      var(--purple);
+    --link-color:                    var(--frost2); 
+    --link-color-hover:              var(--frost1);
+    --link-external-color:           var(--purple);
+    --link-unresolved-color:         var(--frost1);
+    --link-external-color-hover:     var(--frost0);
+
+
+
+/*    --h1-color:                      var(--red); */
+    --h1-color:                     var(--customh1);
     --h2-color:                      var(--yellow);
     --h3-color:                      var(--green);
     --h4-color:                      var(--purple);
     --h5-color:                      var(--frost0);
     --h6-color:                      var(--frost2);
 
-    --text-highlight-bg:             var(--frost1);
+    --text-highlight-bg:             var(--orange);
     --text-highlight-fg:             var(--dark0);
 
     --text-accent:                   var(--orange);
@@ -522,4 +537,3 @@ pre[class*="language-"]
 {
     color: var(--red);
 }
-
